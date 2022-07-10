@@ -1,0 +1,176 @@
+.main {
+	width: 100%;
+	background-color: $font-red;
+	height: 1700px;
+	&__charasters {
+		display: flex;
+		height: 100%;
+		& .swiper {
+			width: 2279px;
+			height: 1250x;
+			margin-left: 330px;
+		}
+	}
+	&__charasters-title {
+		transform: rotate(90deg);
+		position: relative;
+		& h1 {
+			position: absolute;
+			display: block;
+			right: -76px;
+			top: 474px;
+			font-size: 156px;
+			color: black;
+			color: transparent;
+			-webkit-text-stroke: 1px white;
+			text-transform: uppercase;
+			font-family: $DrukWide;
+			font-weight: 900;
+			letter-spacing: 0.1em;
+			transform: scale(1, 0.8);
+		}
+	}
+
+	&__charaster-carousel {
+		margin-left: 100px;
+		// font-size: 100px;
+		margin-top: 120px;
+		display: flex;
+		height: 900px;
+	}
+
+	&__charaster-agent {
+		width: 440px;
+		height: 990px;
+		position: relative;
+		transition: ease-in 0.3s all;
+		cursor: pointer;
+		&:hover > .main__charaster-skills {
+			transition: ease-in 0.3s all;
+			background-color: #fff;
+		}
+		&:hover > .main__charaster-name h2 {
+			-webkit-text-stroke: 1.7px black;
+		}
+		&:hover svg path {
+			fill: $bg-black;
+		}
+		&:after {
+			content: "";
+			transition: ease-in 0.3s all;
+			position: absolute;
+			left: 0;
+			top: 0;
+			border-top: 30px solid $font-red;
+			border-right: 30px solid $bg-black;
+		}
+		&:hover::after {
+			border-right: 30px solid white;
+		}
+	}
+
+	&__charaster-name {
+		position: absolute;
+		transform: rotate(90deg);
+		left: -100px;
+		top: 199px;
+		width: 306px;
+		height: 20px;
+		& p {
+			font-size: 24px;
+			font-family: $DrukWide;
+			color: $font-red;
+			font-weight: 700;
+			letter-spacing: 0.1em;
+		}
+		& h2 {
+			font-size: 72px;
+			font-weight: 900;
+			letter-spacing: 0.1em;
+			font-family: $DrukWide;
+			color: transparent;
+			-webkit-text-stroke: 1px white;
+			text-transform: uppercase;
+			transform: scale(1, 0.8);
+			transition: ease-in 0.3s all;
+		}
+	}
+
+	&__charaster-skills {
+		width: 440px;
+		height: 110px;
+		position: absolute;
+		bottom: -55px;
+		left: 25px;
+		background-color: $bg-black;
+		border: 1px solid white;
+		transition: ease-in 0.3s all;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	&__charaster-agent.phoenix {
+		background: url(../img/charasters/phoenix.png) bottom no-repeat, $bg-black;
+		background-size: 440px 919px;
+		&:hover {
+			background: url(../img/charasters/phoenix.png) center no-repeat, white;
+			background-size: 440px 919px;
+		}
+		&:hover ~ .main__charaster-skills {
+			background-color: #fff;
+		}
+	}
+	&__charaster-agent.jett {
+		background: url(../img/charasters/jett.png) bottom no-repeat, #1f2326;
+		background-size: 440px 919px;
+		&:hover {
+			background: url(../img/charasters/jett.png) center no-repeat, white;
+			background-size: 440px 919px;
+		}
+	}
+	&__charaster-agent.sova {
+		background: url(../img/charasters/sova.png) bottom no-repeat, $bg-black;
+		background-size: 440px 919px;
+		&:hover {
+			background: url(../img/charasters/sova.png) center no-repeat, white;
+			background-size: 440px 919px;
+		}
+	}
+	&__charaster-agent.sage {
+		background: url(../img/charasters/sage.png) bottom no-repeat, $bg-black;
+		background-size: 440px 919px;
+		&:hover {
+			background: url(../img/charasters/sage.png) center no-repeat, white;
+			background-size: 440px 919px;
+		}
+	}
+	&__charaster-agent.cypher {
+		background: url(../img/charasters/cypher.png) bottom no-repeat, $bg-black;
+		background-size: 440px 919px;
+		&:hover {
+			background: url(../img/charasters/cypher.png) center no-repeat, white;
+			background-size: 440px 919px;
+		}
+	}
+	&__charaster-agent.breach {
+		background: url(../img/charasters/breach.png) bottom no-repeat, $bg-black;
+		background-size: 440px 919px;
+		&:hover {
+			background: url(../img/charasters/breach.png) center no-repeat, white;
+			background-size: 440px 919px;
+		}
+	}
+	&__charaster-agent.brimstone {
+		background: url(../img/charasters/brimstone.png) bottom no-repeat, $bg-black;
+		background-size: 440px 919px;
+		&:hover {
+			background: url(../img/charasters/brimstone.png) center no-repeat, white;
+			background-size: 440px 919px;
+		}
+	}
+}
+.swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+	bottom: 450px;
+}
