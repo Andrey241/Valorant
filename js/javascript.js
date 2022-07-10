@@ -28,3 +28,17 @@ const swiper = new Swiper(".swiper", {
 		invert: true,
 	},
 });
+
+const swiper2 = new Swiper(".swiper-skills", {
+	slidesPerView: 3,
+	allowTouchMove: true,
+
+	navigation: {
+		nextEl: ".swiper-skills-next",
+		prevEl: ".swiper-button-prev",
+	},
+	mousewheel: {
+		invert: true,
+	},
+	loop: true,
+});
