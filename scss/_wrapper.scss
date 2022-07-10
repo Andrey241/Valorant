@@ -1,4 +1,10 @@
 .wrapper {
+	background: url(../img/bg-wrapper.png) 0 0 / cover no-repeat;
+	background-color: $bg-black;
+}
+
+.container {
 	margin: 0 auto;
+	padding: 200px 0;
 	max-width: 2660px;
 }

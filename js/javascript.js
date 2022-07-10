@@ -15,7 +15,7 @@
 
 const swiper = new Swiper(".swiper", {
 	slidesPerView: 4,
-
+	allowTouchMove: true,
 	scrollbar: {
 		el: ".swiper-scrollbar",
 		draggable: true,
@@ -32,7 +32,7 @@ const swiper = new Swiper(".swiper", {
 const swiper2 = new Swiper(".swiper-skills", {
 	slidesPerView: 3,
 	allowTouchMove: true,
-
+	spaceBetween: 100,
 	navigation: {
 		nextEl: ".swiper-skills-next",
 		prevEl: ".swiper-button-prev",
