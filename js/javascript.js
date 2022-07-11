@@ -32,7 +32,7 @@ const swiper = new Swiper(".swiper", {
 const swiper2 = new Swiper(".swiper-skills", {
 	slidesPerView: 3,
 	allowTouchMove: true,
-	spaceBetween: 100,
+	spaceBetween: 0,
 	navigation: {
 		nextEl: ".swiper-skills-next",
 		prevEl: ".swiper-button-prev",

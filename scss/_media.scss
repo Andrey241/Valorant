@@ -1,0 +1,101 @@
+@media (max-width: 3000px) {
+	.container {
+		padding: 100px 0;
+		width: 1453px;
+	}
+	.nav {
+		&__logo {
+			margin: 0 30px;
+		}
+		&__logo-link:not(:last-child) {
+			margin-right: 20px;
+		}
+		&__list {
+			width: 880px;
+		}
+	}
+
+	.main {
+		&__charasters-title h1 {
+			position: absolute;
+			display: block;
+			left: -418px;
+			top: 254px;
+			font-size: 150px;
+		}
+		&__charasters {
+			padding: 0 0 45px 0;
+		}
+		&__charasters .swiper {
+			margin-left: 150px;
+			height: 862px;
+		}
+		&__charaster-agent {
+			width: 230px;
+			height: 690px;
+			background-size: 335px 670px !important;
+		}
+		&__charaster-skills {
+			width: 240px;
+			height: 70px;
+			bottom: -25px;
+		}
+		&__charaster-skills svg {
+			transform: scale(0.6);
+		}
+		&__charaster-carousel {
+			margin-left: 43px;
+			margin-top: 50px;
+		}
+		& .swiper-horizontal > .swiper-scrollbar,
+		.main .swiper-scrollbar.swiper-scrollbar-horizontal {
+			bottom: 70px;
+		}
+		&__skills {
+			width: 1278px;
+			margin: 50px -1px -90px 0;
+		}
+		&__skills-description {
+			width: 324px;
+			height: 133px;
+			background-position: 164px 49px;
+			background-size: 90px 82px;
+			padding: 10px 0 10px 25px;
+			& h2 {
+				font-size: 30px;
+			}
+			& h3 {
+				font-size: 18px;
+				margin: 0;
+			}
+			& p {
+				font-size: 14px;
+				width: 209px;
+			}
+			&::before {
+				background-size: 100px 115px;
+				top: 14px;
+				right: -5px;
+			}
+		}
+		&__skills-header {
+			width: 324px;
+		}
+		& .swiper-skills-next {
+			width: 124px;
+			height: 147px;
+			right: -120px;
+		}
+		& .swiper-skills-next__main {
+			height: 133px;
+		}
+
+		&__footer {
+			height: 90px;
+		}
+	}
+	.triangle::after {
+		content: url(../img/triangle.svg);
+		right: -15px;
+	}
+}

@@ -47,6 +47,10 @@
 		position: relative;
 		transition: ease-in 0.3s all;
 		cursor: pointer;
+		background-size: 440px 919px;
+		&:hover {
+			background-size: 440px 919px;
+		}
 		&:hover > .main__charaster-skills {
 			transition: ease-in 0.3s all;
 			background-color: #fff;
@@ -57,15 +61,15 @@
 		&:hover svg path {
 			fill: $bg-black;
 		}
-		&:after {
-			content: "";
-			transition: ease-in 0.3s all;
-			position: absolute;
-			left: 0;
-			top: 0;
-			border-top: 30px solid $font-red;
-			border-right: 30px solid $bg-black;
-		}
+		// &:after {
+		// 	content: "";
+		// 	transition: ease-in 0.3s all;
+		// 	position: absolute;
+		// 	left: 0;
+		// 	top: 0;
+		// 	border-top: 30px solid $font-red;
+		// 	border-right: 30px solid $bg-black;
+		// }
 		&:hover::after {
 			border-right: 30px solid white;
 		}
@@ -113,7 +117,6 @@
 
 	&__charaster-agent.phoenix {
 		background: url(../img/charasters/phoenix.png) bottom no-repeat, $bg-black;
-		background-size: 440px 919px;
 		&:hover {
 			background: url(../img/charasters/phoenix.png) center no-repeat, white;
 			background-size: 440px 919px;
@@ -124,7 +127,6 @@
 	}
 	&__charaster-agent.jett {
 		background: url(../img/charasters/jett.png) bottom no-repeat, #1f2326;
-		background-size: 440px 919px;
 		&:hover {
 			background: url(../img/charasters/jett.png) center no-repeat, white;
 			background-size: 440px 919px;
@@ -132,7 +134,6 @@
 	}
 	&__charaster-agent.sova {
 		background: url(../img/charasters/sova.png) bottom no-repeat, $bg-black;
-		background-size: 440px 919px;
 		&:hover {
 			background: url(../img/charasters/sova.png) center no-repeat, white;
 			background-size: 440px 919px;
@@ -140,7 +141,6 @@
 	}
 	&__charaster-agent.sage {
 		background: url(../img/charasters/sage.png) bottom no-repeat, $bg-black;
-		background-size: 440px 919px;
 		&:hover {
 			background: url(../img/charasters/sage.png) center no-repeat, white;
 			background-size: 440px 919px;
@@ -148,7 +148,6 @@
 	}
 	&__charaster-agent.cypher {
 		background: url(../img/charasters/cypher.png) bottom no-repeat, $bg-black;
-		background-size: 440px 919px;
 		&:hover {
 			background: url(../img/charasters/cypher.png) center no-repeat, white;
 			background-size: 440px 919px;
@@ -156,7 +155,6 @@
 	}
 	&__charaster-agent.breach {
 		background: url(../img/charasters/breach.png) bottom no-repeat, $bg-black;
-		background-size: 440px 919px;
 		&:hover {
 			background: url(../img/charasters/breach.png) center no-repeat, white;
 			background-size: 440px 919px;
@@ -164,7 +162,6 @@
 	}
 	&__charaster-agent.brimstone {
 		background: url(../img/charasters/brimstone.png) bottom no-repeat, $bg-black;
-		background-size: 440px 919px;
 		&:hover {
 			background: url(../img/charasters/brimstone.png) center no-repeat, white;
 			background-size: 440px 919px;
@@ -182,7 +179,7 @@
 	&__skills {
 		margin: 50px -1px 0 0;
 		height: 158px;
-		width: 2300px;
+		width: 2378px;
 		left: -125px;
 		position: relative;
 		& .swiper-skills {
@@ -281,18 +278,8 @@
 	&__skills-description.ultimate::before {
 		background-image: url(../img/backSkills/3.svg);
 	}
-
-	&__footer {
-		width: calc(100%);
-		height: 142px;
-		background-color: #fff;
-		border-bottom-left-radius: 21px;
-		border-bottom-right-radius: 21px;
-	}
-}
-
-.main {
 	& .swiper-skills-next {
+		cursor: pointer;
 		position: absolute;
 		z-index: 10;
 		right: -294px;
@@ -339,4 +326,52 @@
 			}
 		}
 	}
+
+	&__footer {
+		width: calc(100%);
+		height: 142px;
+		background-color: #fff;
+		border-bottom-left-radius: 21px;
+		border-bottom-right-radius: 21px;
+	}
+}
+
+.main {
+	.swiper-slide {
+		transition: ease-in 0.3s all;
+	}
+	&__header-agent {
+		display: none;
+		transition: ease-in 0.3s all;
+		width: 440px;
+		height: 15px;
+		margin-bottom: -1px;
+	}
+	&__corner-agent {
+		transition: ease-in 0.3s background-color;
+		border-left: 1px solid #1f2326;
+		clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+		width: 15px;
+		height: 15px;
+		background-color: $bg-black;
+	}
+	&__rectangle-agent {
+		transition: ease-in 0.3s all;
+		flex-grow: 1;
+		margin-left: -1px;
+		padding: 15px 0 0 8px;
+		margin-left: -1px;
+		border-bottom: none;
+		border-left: none;
+		background-color: $bg-black;
+	}
+}
+
+.main__charaster-agent:hover ~ .main__corner-agent {
+	transition: ease-in 0.3s background-color;
+	background-color: #fff;
+}
+
+.main__charaster-agent:hover ~ .main__rectangle-agent {
+	background-color: #fff;
 }

@@ -40,12 +40,36 @@
 	}
 
 	&__user {
-		margin-right: 60px;
+		margin-right: 70px;
 	}
 
 	&__user,
 	&__item {
 		margin-top: 55px;
 		margin-bottom: 53px;
+	}
+	&__user-name {
+		&::before {
+			content: url("../img/icon.png");
+			width: 40px;
+			height: 40px;
+			display: block;
+			position: absolute;
+			left: -60px;
+			bottom: -12px;
+		}
+	}
+}
+
+.triangle {
+	position: relative;
+	&::after {
+		content: url("../img/triangle.svg");
+		width: 7px;
+		height: 8px;
+		display: block;
+		position: absolute;
+		right: -25px;
+		bottom: 11px;
 	}
 }

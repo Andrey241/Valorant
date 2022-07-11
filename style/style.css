@@ -173,12 +173,36 @@ p {
 }
 
 .nav__user {
-  margin-right: 60px;
+  margin-right: 70px;
 }
 
 .nav__user, .nav__item {
   margin-top: 55px;
   margin-bottom: 53px;
+}
+
+.nav__user-name::before {
+  content: url("../img/icon.png");
+  width: 40px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  left: -60px;
+  bottom: -12px;
+}
+
+.triangle {
+  position: relative;
+}
+
+.triangle::after {
+  content: url("../img/triangle.svg");
+  width: 7px;
+  height: 8px;
+  display: block;
+  position: absolute;
+  right: -25px;
+  bottom: 11px;
 }
 
 .main {
@@ -244,6 +268,11 @@ p {
   -o-transition: ease-in 0.3s all;
   transition: ease-in 0.3s all;
   cursor: pointer;
+  background-size: 440px 919px;
+}
+
+.main__charaster-agent:hover {
+  background-size: 440px 919px;
 }
 
 .main__charaster-agent:hover > .main__charaster-skills {
@@ -259,18 +288,6 @@ p {
 
 .main__charaster-agent:hover svg path {
   fill: #1f2326;
-}
-
-.main__charaster-agent:after {
-  content: "";
-  -webkit-transition: ease-in 0.3s all;
-  -o-transition: ease-in 0.3s all;
-  transition: ease-in 0.3s all;
-  position: absolute;
-  left: 0;
-  top: 0;
-  border-top: 30px solid #ff4656;
-  border-right: 30px solid #1f2326;
 }
 
 .main__charaster-agent:hover::after {
@@ -335,7 +352,6 @@ p {
 
 .main__charaster-agent.phoenix {
   background: url(../img/charasters/phoenix.png) bottom no-repeat, #1f2326;
-  background-size: 440px 919px;
 }
 
 .main__charaster-agent.phoenix:hover {
@@ -349,7 +365,6 @@ p {
 
 .main__charaster-agent.jett {
   background: url(../img/charasters/jett.png) bottom no-repeat, #1f2326;
-  background-size: 440px 919px;
 }
 
 .main__charaster-agent.jett:hover {
@@ -359,7 +374,6 @@ p {
 
 .main__charaster-agent.sova {
   background: url(../img/charasters/sova.png) bottom no-repeat, #1f2326;
-  background-size: 440px 919px;
 }
 
 .main__charaster-agent.sova:hover {
@@ -369,7 +383,6 @@ p {
 
 .main__charaster-agent.sage {
   background: url(../img/charasters/sage.png) bottom no-repeat, #1f2326;
-  background-size: 440px 919px;
 }
 
 .main__charaster-agent.sage:hover {
@@ -379,7 +392,6 @@ p {
 
 .main__charaster-agent.cypher {
   background: url(../img/charasters/cypher.png) bottom no-repeat, #1f2326;
-  background-size: 440px 919px;
 }
 
 .main__charaster-agent.cypher:hover {
@@ -389,7 +401,6 @@ p {
 
 .main__charaster-agent.breach {
   background: url(../img/charasters/breach.png) bottom no-repeat, #1f2326;
-  background-size: 440px 919px;
 }
 
 .main__charaster-agent.breach:hover {
@@ -399,7 +410,6 @@ p {
 
 .main__charaster-agent.brimstone {
   background: url(../img/charasters/brimstone.png) bottom no-repeat, #1f2326;
-  background-size: 440px 919px;
 }
 
 .main__charaster-agent.brimstone:hover {
@@ -420,7 +430,7 @@ p {
 .main__skills {
   margin: 50px -1px 0 0;
   height: 158px;
-  width: 2300px;
+  width: 2378px;
   left: -125px;
   position: relative;
 }
@@ -534,15 +544,8 @@ p {
   background-image: url(../img/backSkills/3.svg);
 }
 
-.main__footer {
-  width: calc(100%);
-  height: 142px;
-  background-color: #fff;
-  border-bottom-left-radius: 21px;
-  border-bottom-right-radius: 21px;
-}
-
 .main .swiper-skills-next {
+  cursor: pointer;
   position: absolute;
   z-index: 10;
   right: -294px;
@@ -592,4 +595,164 @@ p {
   top: 42%;
   left: 45%;
   position: absolute;
+}
+
+.main__footer {
+  width: calc(100%);
+  height: 142px;
+  background-color: #fff;
+  border-bottom-left-radius: 21px;
+  border-bottom-right-radius: 21px;
+}
+
+.main .swiper-slide {
+  -webkit-transition: ease-in 0.3s all;
+  -o-transition: ease-in 0.3s all;
+  transition: ease-in 0.3s all;
+}
+
+.main__header-agent {
+  display: none;
+  -webkit-transition: ease-in 0.3s all;
+  -o-transition: ease-in 0.3s all;
+  transition: ease-in 0.3s all;
+  width: 440px;
+  height: 15px;
+  margin-bottom: -1px;
+}
+
+.main__corner-agent {
+  -webkit-transition: ease-in 0.3s background-color;
+  -o-transition: ease-in 0.3s background-color;
+  transition: ease-in 0.3s background-color;
+  border-left: 1px solid #1f2326;
+  -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+          clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  width: 15px;
+  height: 15px;
+  background-color: #1f2326;
+}
+
+.main__rectangle-agent {
+  -webkit-transition: ease-in 0.3s all;
+  -o-transition: ease-in 0.3s all;
+  transition: ease-in 0.3s all;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-left: -1px;
+  padding: 15px 0 0 8px;
+  margin-left: -1px;
+  border-bottom: none;
+  border-left: none;
+  background-color: #1f2326;
+}
+
+.main__charaster-agent:hover ~ .main__corner-agent {
+  -webkit-transition: ease-in 0.3s background-color;
+  -o-transition: ease-in 0.3s background-color;
+  transition: ease-in 0.3s background-color;
+  background-color: #fff;
+}
+
+.main__charaster-agent:hover ~ .main__rectangle-agent {
+  background-color: #fff;
+}
+
+@media (max-width: 3000px) {
+  .container {
+    padding: 100px 0;
+    width: 1453px;
+  }
+  .nav__logo {
+    margin: 0 30px;
+  }
+  .nav__logo-link:not(:last-child) {
+    margin-right: 20px;
+  }
+  .nav__list {
+    width: 880px;
+  }
+  .main__charasters-title h1 {
+    position: absolute;
+    display: block;
+    left: -418px;
+    top: 254px;
+    font-size: 150px;
+  }
+  .main__charasters {
+    padding: 0 0 45px 0;
+  }
+  .main__charasters .swiper {
+    margin-left: 150px;
+    height: 862px;
+  }
+  .main__charaster-agent {
+    width: 230px;
+    height: 690px;
+    background-size: 335px 670px !important;
+  }
+  .main__charaster-skills {
+    width: 240px;
+    height: 70px;
+    bottom: -25px;
+  }
+  .main__charaster-skills svg {
+    -webkit-transform: scale(0.6);
+        -ms-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  .main__charaster-carousel {
+    margin-left: 43px;
+    margin-top: 50px;
+  }
+  .main .swiper-horizontal > .swiper-scrollbar,
+  .main .main .swiper-scrollbar.swiper-scrollbar-horizontal {
+    bottom: 70px;
+  }
+  .main__skills {
+    width: 1278px;
+    margin: 50px -1px -90px 0;
+  }
+  .main__skills-description {
+    width: 324px;
+    height: 133px;
+    background-position: 164px 49px;
+    background-size: 90px 82px;
+    padding: 10px 0 10px 25px;
+  }
+  .main__skills-description h2 {
+    font-size: 30px;
+  }
+  .main__skills-description h3 {
+    font-size: 18px;
+    margin: 0;
+  }
+  .main__skills-description p {
+    font-size: 14px;
+    width: 209px;
+  }
+  .main__skills-description::before {
+    background-size: 100px 115px;
+    top: 14px;
+    right: -5px;
+  }
+  .main__skills-header {
+    width: 324px;
+  }
+  .main .swiper-skills-next {
+    width: 124px;
+    height: 147px;
+    right: -120px;
+  }
+  .main .swiper-skills-next__main {
+    height: 133px;
+  }
+  .main__footer {
+    height: 90px;
+  }
+  .triangle::after {
+    content: url(../img/triangle.svg);
+    right: -15px;
+  }
 }
