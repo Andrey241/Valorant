@@ -14,7 +14,6 @@
 // );
 
 const swiper = new Swiper(".swiper", {
-	slidesPerView: 4,
 	allowTouchMove: true,
 	scrollbar: {
 		el: ".swiper-scrollbar",
@@ -24,10 +23,20 @@ const swiper = new Swiper(".swiper", {
 		nextEl: ".swiper-button-next",
 		prevEl: ".swiper-button-prev",
 	},
+	breakpoints: {
+		0: {
+			enabled: false,
+		},
+		768: {
+			slidesPerView: 3,
+		},
+		1201: {
+			slidesPerView: 4,
+		},
+	},
 });
 
 const swiper2 = new Swiper(".swiper-skills", {
-	slidesPerView: 3,
 	allowTouchMove: true,
 	spaceBetween: 0,
 	navigation: {
@@ -38,6 +47,17 @@ const swiper2 = new Swiper(".swiper-skills", {
 		invert: true,
 	},
 	loop: true,
+	breakpoints: {
+		0: {
+			enabled: false,
+		},
+		768: {
+			slidesPerView: 2,
+		},
+		1201: {
+			slidesPerView: 3,
+		},
+	},
 });
 
 window.addEventListener("mouseover", () => {
