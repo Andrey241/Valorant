@@ -24,9 +24,6 @@ const swiper = new Swiper(".swiper", {
 		nextEl: ".swiper-button-next",
 		prevEl: ".swiper-button-prev",
 	},
-	mousewheel: {
-		invert: true,
-	},
 });
 
 const swiper2 = new Swiper(".swiper-skills", {
@@ -41,4 +38,9 @@ const swiper2 = new Swiper(".swiper-skills", {
 		invert: true,
 	},
 	loop: true,
+});
+
+window.addEventListener("mouseover", () => {
+	console.log("width: " + window.screen.availWidth);
+	console.log("Height: " + window.screen.availHeight);
 });

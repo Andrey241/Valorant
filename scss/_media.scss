@@ -1,6 +1,6 @@
 @media (max-width: 3000px) {
 	.container {
-		padding: 100px 0;
+		padding: 50px 0;
 		width: 1453px;
 	}
 	.nav {
@@ -92,6 +92,139 @@
 
 		&__footer {
 			height: 90px;
+		}
+	}
+	.triangle::after {
+		content: url(../img/triangle.svg);
+		right: -15px;
+	}
+}
+@media (max-width: 3000px) and (min-height: 1200px) {
+	body {
+		overflow: hidden;
+	}
+}
+
+@media (max-width: 1600px) {
+	.container {
+		padding: 25px 0;
+		width: 1100px;
+	}
+	.nav {
+		&__logo {
+			margin: 0 10px;
+			transform: scale(0.6);
+		}
+		&__logo-link:not(:last-child) {
+			margin-right: 15px;
+		}
+		&__list {
+			width: 618px;
+			display: grid;
+			grid-template-rows: repeat(2, 20px);
+			grid-template-columns: repeat(5, 1fr);
+		}
+		&__links {
+			margin: 20px 0;
+			align-items: center;
+		}
+		&__user,
+		.nav__item {
+			margin: 0 40px 0 0;
+		}
+	}
+
+	.main {
+		&__charasters-title h1 {
+			position: absolute;
+			display: block;
+			left: -240px;
+			top: 190px;
+			font-size: 70px;
+		}
+		&__charasters {
+			padding: 0 0 0 0;
+		}
+		&__charasters .swiper {
+			margin-left: 70px;
+			height: 553px;
+		}
+		&__charaster-agent {
+			width: 188px;
+			height: 414px;
+			background-size: 188px 414px !important;
+		}
+		&__charaster-skills {
+			width: 186px;
+			height: 59px;
+			bottom: -25px;
+		}
+		&__charaster-skills svg {
+			transform: scale(0.6);
+		}
+		&__charaster-carousel {
+			margin-left: 43px;
+			margin-top: 30px;
+		}
+		&__charaster-name {
+			left: -125px;
+			& p {
+				font-size: 18px;
+			}
+			& h2 {
+				font-size: 45px;
+			}
+		}
+
+		& .swiper-horizontal > .swiper-scrollbar,
+		.main .swiper-scrollbar.swiper-scrollbar-horizontal {
+			bottom: 70px;
+		}
+		&__skills {
+			width: 900px;
+			margin: 50px -1px -90px 0;
+			left: -65px;
+		}
+		&__skills-wrapper {
+			bottom: -25px;
+		}
+		&__skills-description {
+			width: 210px;
+			height: 60px;
+			background-position: 120px -3px;
+			background-size: 60px 62px;
+			padding: 10px 0 10px 25px;
+			& h2 {
+				font-size: 30px;
+			}
+			& h3 {
+				font-size: 18px;
+				margin: 0;
+			}
+			& p {
+				font-size: 14px;
+				width: 209px;
+			}
+			&::before {
+				background-size: 50px;
+				top: -1px;
+				right: -85px;
+			}
+		}
+		&__skills-header {
+			width: 210px;
+		}
+		& .swiper-skills-next {
+			width: 124px;
+			height: 147px;
+			right: -120px;
+		}
+		& .swiper-skills-next__main {
+			height: 59px;
+		}
+
+		&__footer {
+			height: 70px;
 		}
 	}
 	.triangle::after {

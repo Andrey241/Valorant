@@ -103,6 +103,10 @@ p {
   margin: 0;
 }
 
+body {
+  background-color: #1f2326;
+}
+
 .wrapper {
   background: url(../img/bg-wrapper.png) 0 0/cover no-repeat;
   background-color: #1f2326;
@@ -661,7 +665,7 @@ p {
 
 @media (max-width: 3000px) {
   .container {
-    padding: 100px 0;
+    padding: 50px 0;
     width: 1453px;
   }
   .nav__logo {
@@ -750,6 +754,142 @@ p {
   }
   .main__footer {
     height: 90px;
+  }
+  .triangle::after {
+    content: url(../img/triangle.svg);
+    right: -15px;
+  }
+}
+
+@media (max-width: 3000px) and (min-height: 1200px) {
+  body {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 1600px) {
+  .container {
+    padding: 25px 0;
+    width: 1100px;
+  }
+  .nav__logo {
+    margin: 0 10px;
+    -webkit-transform: scale(0.6);
+        -ms-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  .nav__logo-link:not(:last-child) {
+    margin-right: 15px;
+  }
+  .nav__list {
+    width: 618px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (20px)[2];
+        grid-template-rows: repeat(2, 20px);
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+  }
+  .nav__links {
+    margin: 20px 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav__user,
+  .nav .nav__item {
+    margin: 0 40px 0 0;
+  }
+  .main__charasters-title h1 {
+    position: absolute;
+    display: block;
+    left: -240px;
+    top: 190px;
+    font-size: 70px;
+  }
+  .main__charasters {
+    padding: 0 0 0 0;
+  }
+  .main__charasters .swiper {
+    margin-left: 70px;
+    height: 553px;
+  }
+  .main__charaster-agent {
+    width: 188px;
+    height: 414px;
+    background-size: 188px 414px !important;
+  }
+  .main__charaster-skills {
+    width: 186px;
+    height: 59px;
+    bottom: -25px;
+  }
+  .main__charaster-skills svg {
+    -webkit-transform: scale(0.6);
+        -ms-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  .main__charaster-carousel {
+    margin-left: 43px;
+    margin-top: 30px;
+  }
+  .main__charaster-name {
+    left: -125px;
+  }
+  .main__charaster-name p {
+    font-size: 18px;
+  }
+  .main__charaster-name h2 {
+    font-size: 45px;
+  }
+  .main .swiper-horizontal > .swiper-scrollbar,
+  .main .main .swiper-scrollbar.swiper-scrollbar-horizontal {
+    bottom: 70px;
+  }
+  .main__skills {
+    width: 900px;
+    margin: 50px -1px -90px 0;
+    left: -65px;
+  }
+  .main__skills-wrapper {
+    bottom: -25px;
+  }
+  .main__skills-description {
+    width: 210px;
+    height: 60px;
+    background-position: 120px -3px;
+    background-size: 60px 62px;
+    padding: 10px 0 10px 25px;
+  }
+  .main__skills-description h2 {
+    font-size: 30px;
+  }
+  .main__skills-description h3 {
+    font-size: 18px;
+    margin: 0;
+  }
+  .main__skills-description p {
+    font-size: 14px;
+    width: 209px;
+  }
+  .main__skills-description::before {
+    background-size: 50px;
+    top: -1px;
+    right: -85px;
+  }
+  .main__skills-header {
+    width: 210px;
+  }
+  .main .swiper-skills-next {
+    width: 124px;
+    height: 147px;
+    right: -120px;
+  }
+  .main .swiper-skills-next__main {
+    height: 59px;
+  }
+  .main__footer {
+    height: 70px;
   }
   .triangle::after {
     content: url(../img/triangle.svg);
