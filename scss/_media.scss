@@ -353,12 +353,22 @@
 	body {
 		overflow: visible;
 	}
+	.container {
+		padding: 0;
+		width: 100%;
+	}
+	.header {
+		border-radius: 0;
+	}
 	.main {
 		& .swiper {
 			overflow: visible;
 			width: 100%;
 			height: 100%;
 			margin: 0 auto;
+		}
+		&__charasters {
+			height: 1205px;
 		}
 		&__charasters-title {
 			display: none;
@@ -384,6 +394,20 @@
 				margin: 0;
 				grid-column: 3 / 4;
 			}
+		}
+		&__skills-wrapper {
+			display: none;
+		}
+		&__skills-media {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		&__skills-item {
+			margin: 10px 0;
+		}
+		&__footer {
+			display: none;
 		}
 	}
 }

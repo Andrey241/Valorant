@@ -54,6 +54,10 @@ const swiper2 = new Swiper(".swiper-skills", {
 	breakpoints: {
 		0: {
 			enabled: false,
+			scrollbar: {
+				el: ".swiper-scrollbar",
+				draggable: false,
+			},
 		},
 		768: {
 			slidesPerView: 2,
