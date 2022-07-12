@@ -817,6 +817,11 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
+  .nav__user-name::before {
+    -webkit-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+            transform: scale(0.5);
+  }
   .nav__user,
   .nav .nav__item {
     margin: 0 40px 0 0;
