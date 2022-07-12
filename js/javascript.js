@@ -72,3 +72,10 @@ window.addEventListener("mouseover", () => {
 	console.log("width: " + window.screen.availWidth);
 	console.log("Height: " + window.screen.availHeight);
 });
+
+const burger = document.querySelector("#burger");
+burger.addEventListener("click", function () {
+	document.querySelector(".nav__list").classList.toggle("active");
+	document.querySelector("body").classList.toggle("hidden");
+	burger.classList.toggle("bg-red");
+});

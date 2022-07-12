@@ -59,6 +59,16 @@
 			bottom: -12px;
 		}
 	}
+
+	&__burger {
+		display: none;
+		width: 20px;
+		height: 20px;
+		position: relative;
+		background-color: $bg-black;
+		z-index: 3;
+		margin: 0 25px;
+	}
 }
 
 .triangle {

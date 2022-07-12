@@ -116,8 +116,10 @@
 	}
 
 	&__charaster-agent.phoenix {
+		transition: ease-in 0.3s all;
 		background: url(../img/charasters/phoenix.png) bottom no-repeat, $bg-black;
 		&:hover {
+			transition: ease-in 0.3s all;
 			background: url(../img/charasters/phoenix.png) center no-repeat, white;
 			background-size: 440px 919px;
 		}
